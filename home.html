@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Fake Email & OTP Generator</h1>
+
+    <form method="POST">
+
+        <button type="submit">
+            Generate Email & OTP
+        </button>
+
+    </form>
+
+    <h2>{{ message }}</h2>
+
+    <h3>Email: {{ email }}</h3>
+
+    <h3>OTP: {{ otp }}</h3>
+
+    <a href="/login">
+        <button>Go To Login</button>
+    </a>
+
+</div>
+
+</body>
+</html>
