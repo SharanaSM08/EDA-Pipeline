@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Visitors</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Visitors List</h1>
+
+    <h2>Total Visitors: {{ total }}</h2>
+
+    <ul>
+
+        {% for email in emails %}
+
+            <li>{{ email }}</li>
+
+        {% endfor %}
+
+    </ul>
+
+    <a href="/">
+        <button>Back To Home</button>
+    </a>
+
+</div>
+
+</body>
+</html>
